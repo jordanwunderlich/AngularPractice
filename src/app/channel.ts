@@ -1,12 +1,11 @@
-// import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-// @Component({
-//   selector: 'channel',
-//   templateUrl: './app.channel.html',
-//   styleUrls: ['./app.channel.css']
-// })
+@Component({
+  selector: 'channel',
+  templateUrl: './channel.html',
+  //styleUrls: ['./channel.css']
+})
 export class Channel {
-  constructor (
-    public title: string,
-    public desc: string ) { }
+  @Input() title: string;
+  @Input() desc: string;
 }

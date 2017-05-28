@@ -7,9 +7,9 @@ import { Channel } from './channel';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  channels = [
-      new Channel('Channel 1', 'Desc 1'),
-      new Channel('Channel 2', 'Desc 2')
+  CHANNELS: Channel[] = [
+    {title: 'Channel 1', desc: 'Desc 1'},
+    {title: 'Channel 2', desc: 'Desc 2'}
   ];
   title = 'Project';
 }

@@ -1,7 +1,6 @@
 <h1>{{title}}</h1>
 <div className="row">
-    <div *ngFor="let channel of channels">
-        <h3>{{ channel.title }}</h3>
-        <p>{{ channel.desc }}</p>
+    <div *ngFor="let channel of CHANNELS">
+        <channel [title]="channel.title" [desc]="channel.desc"></channel>
     </div>
 </div>
