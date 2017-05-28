@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Channel } from './channel';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  channels = [
+      new Channel('Channel 1', 'Desc 1'),
+      new Channel('Channel 2', 'Desc 2')
+  ];
+  title = 'Project';
 }
+
