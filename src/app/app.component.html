@@ -1,6 +1,13 @@
-<h1>{{title}}</h1>
-<div className="row">
-    <div *ngFor="let channel of CHANNELS">
-        <channel [title]="channel.title" [desc]="channel.desc"></channel>
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div *ngIf="isLoggedIn">
+        <p class="navbar-text navbar-right">Logged In: {{user_displayName}} ({{user_email}})<p>
+      </div>
+      <div *ngIf="!isLoggedIn">
+        <p class="navbar-text navbar-right">Logged Out</p>
+      </div>
     </div>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
